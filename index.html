@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Тестовое задание</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <img class="header__logo" src="img/logo.png" width="80" alt="логотип">
+                <nav class="nav">
+                    <a class="nav__link active" href="#">Сервисы</a>
+                    <a class="nav__link" href="#">Компания</a>
+                    <a class="nav__link" href="#">Статьи</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                </nav>
+            </div>
+            <h1 class="header__titile">Введение в веб-технологии — понятния интернет и всемирная паутина</h1>
+            <img class="header__img" src="img/main.jpeg" alt="">           
+        </div>    
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <nav class="toc">
+                <h2 class="main__titile">Содержание:</h2>
+                <ol>
+                    <li class="toc__item"><a class="toc__link" href="#introduction">Вступление</a></li>
+                    <li class="toc__item"><a class="toc__link" href="#intro-web-tech">Введение в web-технологии</a></li>
+                    <li class="toc__item"><a class="toc__link" href="#main-terms-web-tech">Основные понятия веб-технологий</a></li>
+                    <li class="toc__item"><a class="toc__link" href="#how-build-pages">Как строятся веб-страницы</a></li>
+                    <li class="toc__item"><a class="toc__link" href="#dinamic-html">Динамический HTML</a></li>
+                    <li class="toc__item"><a class="toc__link" href="#conclusions">Выводы</a></li>
+                </ol>
+              </nav>
+
+            <h2 class="main__titile" id="introduction">Вступление</h2>
+            <p class="main__text">Сразу замечу, что понятие веб-технологии гораздо шире чем Интернет. Всемирная паутина лишь элемент веб-технологий, которые в свою очередь лишь логический элемент Интернет технологий. Более подробно об этом в статье <a class="extern-link" href="https://webonto.ru/internet-tehnologii-chto-eto-takoe/" target="_blank">Интернет технологии это что такое?</a></p>
+            <p class="main__text">Хорошим примером комплексного применения логических элементов интернет технологий являются всем хорошо знакомые онлайн географические карты.</p>
+            <p class="main__text">Такие элементы интернет технологий, как web API и языки программирования JS и HTML, дают возможность создания и использования <a class="extern-link" href="https://romua1d.ru/obzor-onlajn-konstruktorov-kart/" target="_blank">онлайн конструкторов карт</a>, динамических карт с привязкой местоположения пользователя, карт для постройки маршрута и т.д.</p>
+            <p class="main__text">Веб-инструменты под названием «конструкторы карт»,  позволяют создать схемы проезда и указатели местоположения конкретных географических объектов. Например, показать на карте местоположение магазина.</p>
+            <p class="main__text">Сервисы API Карт позволяют использовать картографические данные в веб-проектах, через геодекодеры JS API и HTTP API. Например, построить маршрут от точки А до точки Б или показать пользователю магазины по его местоположению. </p>
+        
+            <h2 class="main__titile" id="intro-web-tech">Введение в web-технологии</h2>
+            <p class="main__text">Еще раз замечу. <span class="intro__text--bold">Не стоит путать понятия Интернет и всемирная паутина (WWW).</span></p>
+            <p class="main__text">Интернет это глобальная сеть компьютерных сетей, а WWW это один из сервисов Интернет. Но эта путаница скорее говорит о глобальной популярности всемирной паутины (WWW) и подчеркивает ее значимость для пользователей.</p>
+            <p class="main__text">Веб–технологии это логическая составляющая  Интернет–технологий, которые включают в себя:</p>
+            <ol class="main__list">
+                <li class="main__item  ordered--item">Интернет-сервисы
+                    <ul class="main__list">
+                        <li class="main__item">WWW – Всемирная паутина</li>
+                    </ul>
+                </li>
+                <li class="main__item  ordered--item">Работа в Интернет
+                    <ul class="main__list">
+                        <li class="main__item">Браузеры</li>
+                        <li class="main__item">Поисковые системы</li>
+                        <li class="main__item">Просмотр страниц в браузере</li>
+                    </ul>
+                </li>
+                <li class="main__item  ordered--item">Информационные ресурсы Интернет
+                    <ul class="main__list">
+                        <li class="main__item">Веб-страницы, интернет-магазины, интернет-порталы</li>
+                        <li class="main__item">URL и протоколы передачи данных, адресация</li>
+                        <li class="main__item">Создание сайтов</li>
+                        <li class="main__item">Языки веб-программирования</li>
+                    </ul>
+                </li>
+            </ol>
+            <figure class="main__figure">
+                <img class="figure__img" src="img/top-10-web-technologies.png" width="500" alt="">
+                <figcaption>Топ 10 современных веб-технологий</figcaption>
+            </figure>
+
+            <h2 class="main__titile" id="main-terms-web-tech">Основные понятия веб-технологий</h2>
+            <p class="main__text">Основные понятия веб-технологий: веб-страница и веб-сайт. Их не стоит путать.</p>
+            <blockquote class="main__blockqoute">Веб-страница – это минимальная единица сервиса WWW. По-сути это документ, который уникализирован в WWW своим URL адресом.</blockquote>
+            <p class="main__text">Веб-сайт – это набор веб-страниц связанных общей тематикой. Веб-сайт находится на одном сервере (хостинге) и принадлежит одному владельцу. Как вариант, веб-сайт может состоять из одной веб-страницы (сайт – визитка).</p>
+            <p class="main__text">Совокупностью всех веб-сайтов и образуют всемирную паутину, часто называемую веб или WWW – сервиса Интернет, созданного для поиска и обмена нужной информации.</p>
+
+            <h2 class="main__titile"  id="how-build-pages">Как строятся веб-страницы</h2>
+            <ul class="main__list">
+                <li class="main__item">Веб-страница строится на основе языка разметки гипертекста. Официальное название этого языка HTML (Hyper Text Markup Language).</li>
+                <li class="main__item">Для отражения содержимого на веб-страницы созданы и служат каскадные таблицы стилей, иначе CSS.</li>
+                <li class="main__item">В создании динамических страниц, на помощь разработчикам «приходят» языки скриптов. Самый популярный язык <a class="extern-link" href="https://learn.javascript.ru/" target="_blank">JavaScript</a>.</li>
+                <li class="main__item">В принципе, с помощью этих трех языков HTML, CSS, JavaScript можно создать любую, даже самую сложную, веб – страницу, а созданные веб-страницы собрать в веб-сайт.</li>
+            </ul>
+
+            <h2 class="main__titile"  id="dinamic-html">Динамический HTML</h2>
+            <p class="main__text">Чтобы браузеры отображали созданные веб-страницы, а браузеры видят веб-страницу, как набор объектов, был создан  стандарт DOM (Document Object Model). Согласно ему, веб-страница должна представляться в виде набора объектов, а сам стандарт DOM называется объектная модель документа.</p>
+            <ul class="main__list">
+                <li class="main__item">DOM связан с JavaScript, а по сути, эта модель связывает веб-страницы со скриптами или языками программирования.</li>
+                <li class="main__item">Связку HTML, CSS, JavaScript и DOM называют динамическим HTML или Dynamic HTML, а иногда DHTML.</li>
+            </ul>
+            
+            <h2 class="main__titile"  id="conclusions">Выводы</h2>
+            <p class="main__text">Подводя итоги, отмечу, что основная цель в изучении веб-технологий это создание или изменение веб-страниц, которые будут правильно отражаться в браузерах. Также введение в web-технологии поможет вам читать коды ваших веб-страниц, что, несомненно, нужно для любого владельца веб ресурсов.</p>
+        </div> <!-- /.container -->
+
+        <a href="#" class="topbutton">↑</a>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <h3 class="footer__title">База данных</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__item-link" href="#">Видео уроки</a></li>
+                        <li class="footer__item"><a class="footer__item-link" href="#">База данных</a></li>
+                        <li class="footer__item"><a class="footer__item-link" href="#">Статьи</a></li>
+                        <li class="footer__item"><a class="footer__item-link" href="#">Глоссарий</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__block">
+                    <h3 class="footer__title">IT</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__item-link" href="#">Интернет технологии</a></li>
+                        <li class="footer__item"><a class="footer__item-link" href="#">Сервисы Интернет</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__block">
+                    <h3 class="footer__title">Для вас</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__item-link" href="#">Карта сайта</a></li>
+                        <li class="footer__item"><a class="footer__item-link" href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+                
+                <form class="submit" action="#">
+                    <h3 class="footer__title">Подпишитесь на нашу рассылку</h3>
+                    <input class="submit__input" type="text" name="name" placeholder="Имя" required>
+                    <input class="submit__input" type="email" name="email" placeholder="E-mail" required>
+                    <button class="submit__btn  btn">Подписаться</button>
+                </form>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
