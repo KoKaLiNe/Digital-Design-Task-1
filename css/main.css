@@ -15,6 +15,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
 /* header */
 
 .header__logo {
+    max-width: 80px;
     margin-left: 20px;
 }
 
@@ -52,6 +53,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
 
 .nav__link:hover {
     border-bottom: 2px solid #101c46;
+}
+
+.nav__btn {
+    padding-right: 10px;
+    display: none;
 }
 
 /* main */
@@ -107,8 +113,10 @@ text-decoration: underline;
 
 
     /* figure */
+
 .main__figure {
-    width: 555px;
+    width: 100%;
+    max-width: 555px;
     margin: 0 auto;
     text-align: center;
     border: 1px solid #969696;
@@ -116,17 +124,22 @@ text-decoration: underline;
     padding-bottom: 10px;
 }
 
+.figure__img {
+    width: 100%;
+}
+
 .main__blockqoute {
     background-color: #c3bbce;
     padding: 15px 0 15px 15px;
     position: relative;
     padding-left: 30px;
+    padding-right: 10px;
 }
 .main__blockqoute::before {
     content: "";
     display: block;
     width: 12px;
-    height: 52px;
+    height: 100%;
     background-color: #79767e;
 
     position: absolute;
@@ -165,6 +178,7 @@ text-decoration: underline;
 }
 
 .footer__title {
+    font-size: 18px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -239,3 +253,121 @@ text-decoration: underline;
     display: block;
 }
 
+
+/* Responsive */
+
+/* 1200px - 1400px */
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+
+/* 768px - 922px */
+
+@media screen and (max-width: 922px) {
+    .container {
+        width: 720px;
+    }
+
+    .header__titile {
+        font-size: 40px;
+    }
+
+    .main__titile {
+        font-size: 28px;
+    }
+
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+
+    .footer__block {
+        width: 30%;
+    }
+
+    .submit {
+        margin: 0 auto;
+    }
+}
+
+
+/* 576px - 768px */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .header__logo {
+        width: 60px;
+    }
+
+    .header__titile {
+        font-size: 30px;
+    }
+    
+    .header__img {
+        display: none;
+    }
+
+    .main__titile {
+        font-size: 25px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav__btn {
+        display: block;
+    }
+
+    .topbutton {
+        display: none;
+    }
+}
+
+
+/* 0 - 576px */
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    .header__titile {
+        font-size: 25px;
+    }
+
+    .main__titile {
+        font-size: 20px;
+    }
+
+    .footer__block {
+        width: 100%;
+        /* margin-bottom: 0; */
+    }
+
+    .footer__title {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .footer__item {
+        padding: 0 10px;    
+    }
+    
+    .footer__item-link {
+        font-size: 14px;
+    }
+}
